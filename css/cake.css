@@ -1,0 +1,589 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    scroll-behavior: smooth;
+  }
+  section{
+    width: 100%;
+  }
+  .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  a,
+  a:hover{
+    text-decoration: none;
+  }
+  /*Start Header*/
+  .header{
+    background-color: black;
+
+  }
+  .header .top-header{
+    padding: 20px 10px;
+  }
+  .header .top-header .left-info {
+    padding: 5px;
+  }
+  .header .top-header .left-info  li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 5px;
+  }
+  .header .top-header .left-info  li:hover a{
+    color: #e5bf4a;
+    transition: all 0.5s ease;
+  }
+  .header .top-header .left-info li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+  }
+  .header .top-header .logo{    
+    color: #e5bf4a;
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+  
+  .header .top-header .right-info a{
+    text-decoration: none;
+    color: #e5bf4a;
+    font-size: 20px;
+    border: #e5bf4a 1px solid;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  .header .top-header .right-info:hover a{
+    background-color: #e5bf4a;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+      
+  }
+  .header .bottom-header .row{
+    position: relative;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    justify-content: center !important;
+  }
+  .header .bottom-header nav{
+    display: block;
+  }
+  .header .bottom-header .menu .lists li{
+    display: inline-block;
+    position: relative;
+  }
+  .header .bottom-header .menu nav .lists li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 45px;
+  }
+  .header .bottom-header .menu nav .lists li a.active{
+    color: #e5bf4a;
+  }
+  .header .bottom-header .menu nav .lists li:hover a{
+      color: #e5bf4a;
+      transition: all 0.5s ease;
+  }
+  
+  /*Start Home*/
+  .Home{
+    background-image: url("../images/Home.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  .Home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+  }
+  .Home .row{
+    min-height: 100vh;
+}
+  .Home .Home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    margin-top: -230px;
+    z-index: 2;
+    position: relative;
+    transition: all 1s;
+  }
+  .Home .Home-content .Home-text{
+    margin-bottom: 20px;
+  }
+  .Home .Home-content h1{
+    color: #e5bf4a;
+      font-size: 45px;
+      letter-spacing: 5px;
+    position: relative;
+    animation: animate 2s ease-in-out;
+  }
+  @keyframes animate{
+    0%{
+      font-size: 50px;
+  }
+    100%{
+      font-size: 45px;
+  }
+  }
+  
+  .Home .Home-content a{
+    text-decoration: none;
+    color: white;
+    margin-right: 130px;
+    border: 1px solid #e5bf4a;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .Home .Home-content a:hover{
+    color: #e5bf4a;
+    background-color: rgba(247, 202, 119, 0.3);
+    transition: all 0.5s ease;
+  }
+  /*End Home*/
+  /*Start About*/
+  .About{
+    background-color: black;
+    padding-top: 100px;
+  }
+  
+  .About .About-Header{
+    color: rgb(255,255,255);
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 50px 0;    
+  }
+  .About .About-text
+  {
+    width: 50%;
+  }
+  .About .About-text h2{
+    color: #e5bf4a;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .About .About-text p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: cursive;
+  }
+  .About .About-image{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 40%;
+  }
+  /*End About*/
+  /*Start Cake*/
+  .Cakes{
+    background-color: black;
+    padding-bottom: 150px;
+    padding-top: 100px;
+  }
+  .Cakes .container{
+    border-bottom: 1px solid rgba(253, 180, 44, 0.2);
+  }
+  .Cakes .swipe{
+    white-space: nowrap;
+    margin-top: 100px;
+  }
+  .Cakes .swipe .swipe-content{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  .Cakes .swipe .swipe-content img{
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+    filter: grayscale(35%);
+  }
+  .Cakes .swipe .swipe-content:hover img{
+    transform: scale(1.05);
+    filter: grayscale(0);
+
+  }
+  .Cakes .swipe .swipe-content .overlay {
+    padding: 10px 35%;
+    background-color: #e5bf4a;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .Cakes .swipe .swipe-content:hover .overlay{
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+  .Cakes .swipe .swipe-content .overlay a{
+    text-decoration: none;
+    color: white;
+  }
+  .Cakes .swipe .swipe-content .span-text{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: cursive;
+  }
+  
+  .Cakes .swipe .swipe-content .comment{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    font-family: cursive;
+  }
+  .Cakes .swipe .swipe-content .price{
+    color: #e5bf4a;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /*End Cake*/
+  /*Start Rate*/
+  .Rate {
+    background-color: black;
+  
+  }
+  .Rate h1{
+    text-align: center;
+    padding-bottom: 80px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .Rate .row{
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+  }
+  .Rate .second{
+    
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+    border-left: 1px solid rgb(255, 255, 255, 0.2);
+  }
+  .Rate .opinions{
+    display: inline-block;
+    width: 30%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+  }
+  
+  .Rate .opinions li{
+    display: inline-block;
+    color: #e5bf4a;
+    margin-right: 5px;
+    margin-top: 30px;
+  }
+  .Rate p{
+    color: rgb(255, 255, 255 ,.5);
+    font-size: 17px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    font-family: cursive;
+  }
+  .Rate .opinions .name{
+    margin-bottom: 30px;
+    font-family: cursive;
+  }
+  .Rate .opinions .name img{
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .Rate .opinions .name span{
+    color: #e5bf4a;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  /*End Rate*/
+  /*Start Blog*/
+  .Blog{
+    background-color: black;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .Blog .Head-line{
+    margin-bottom: 110px;
+  }
+  .Blog .container .row span{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    letter-spacing: 3px;
+  }
+  .Blog .row .Btn{
+   padding: 20px 60px;
+    background-color: #e5bf4a;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: cursive;
+  }
+  .Blog .row .Btn:hover{
+    background-color: transparent;
+    color: #e5bf4a;
+    transition: all 0.5s ease;
+  }
+  .Blog .row {
+    /* gap: 5px; */
+  }
+  .Blog .Blog-image{
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+  }
+  .Blog .Blog-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .Blog .row .border-right{
+    
+  }
+  .Blog .Blog-content{
+    width: 300px;
+    /* padding: 10px; */
+    border-right: 5px solid  #e5bf4a;
+  }
+  .Blog .Blog-content h2{
+    font-size: 18px;
+    color: #e5bf4a;
+    opacity: 0.5;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: cursive;
+  }
+  .Blog .Blog-content p{
+    font-size: 13px;
+    color: rgb(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 7px;
+    font-family: cursive;
+  }
+  .Blog .Blog-content a{
+    text-decoration: none;
+    color: #e5bf4a;
+    margin-left: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5bf4a;
+    font-family: cursive;
+  }
+  .Blog .Blog-content a:hover{
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+  }
+  .Blog .follow{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-family: cursive;
+    margin: 100px auto 50px;
+  }
+  .Blog .Fake-cake{
+    text-decoration: none;
+    border: 1px solid #e5bf4a;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #e5bf4a;
+    padding: 15px 30px;
+    margin: 10px auto 60px;
+  }
+  .Blog .Fake-cake i{
+    margin-right: 10px;
+    font-size: 20px;
+    
+  }
+  .Blog .Fake-cake:hover {
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  }
+  .Blog .follow-image{
+    display: inline-block;
+    width: 25%;
+    padding: 15px;
+    overflow: hidden;
+  }
+  .Blog .follow-image img{
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+  }
+  .Blog .follow-image:hover img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+  /*End Blog*/
+  /*Strat contact*/
+  .Contact{
+    background-color: rgb(0, 0, 0);
+  }
+  .Contact h1{
+    color: #e5bf4a;
+    margin-bottom: 40px;
+  }
+  .Contact nav{
+    display: block;
+  }
+  .Contact .menu .lists li{
+    display: inline-block;
+    position: relative;
+  }
+  .Contact .menu nav .lists li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 45px;
+  }
+  .Contact .menu nav .lists li:hover a{
+      color: #e5bf4a;
+      transition: all 0.5s ease;
+  }
+  .Contact .align-items-center{
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+  }
+  .Contact .contact-us{
+    display: inline-block;
+    width: 20%;
+    margin: 20px auto 60px;
+    padding-right: 50px;
+  }
+  .Contact .big{
+    width: 50%;
+  }
+  
+  .Contact .contact-us p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    margin: 30px auto 40px;
+  }
+  .Contact .contact-us .btn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    font-family: cursive;
+    margin: 30px 5px auto auto;
+  }
+  .Contact .contact-us .btn:hover{
+    color: #e5bf4a;
+    border: 1px solid #e5bf4a;
+    transition: all 0.5s ease;
+  }
+  .Contact .contact-us .btn i{
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .Contact .contact-us a {
+    text-decoration: none;
+  }
+  .Contact .contact-us a .fa-location-arrow,
+  .Contact .contact-us a .fa-phone{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .Contact .contact-us span{
+    color: #e5bf4a;
+    font-family: cursive;
+    font-size: 25px;
+  }
+  .Contact .contact-us h3{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+  }
+  .Contact .contact-us h3 span{
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+  }
+  .Contact .contact-us .cont{
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+  }
+  .Contact .contact-us .cont:hover{
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+  }
+  .Contact .contact-us h4{
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+  /*End contact*/
+  /*Start Footer*/
+  .Footer{
+    background-color: rgb(0, 0, 0);
+  }
+  .Footer span{
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: 15px;
+    margin: 40px auto 20px 
+  }
+  .Footer span a{
+    text-decoration: none;
+    color: #e5bf4a;
+    margin-left: 5px;
+  }
+  /*End Footer*/
+  .scroll-up{
+    position: fixed;
+    font-size: 30px;
+    right: 10px; top: -105%;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: #e5bf4a;
+    z-index: 1000;
+    transition: 1s linear;
+}
+.scroll-up.active{
+    top: calc(100% - 150px);
+} 
